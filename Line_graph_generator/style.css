@@ -1,0 +1,28 @@
+#draw_line{
+   display: inline-block;
+}
+
+#horizontal{
+   display: inline-block;
+}
+
+#vertical{
+   display: inline-block;
+}
+
+#myCanvas{
+   border: 2px solid black; 
+   margin-left: 50px; 
+   margin-top: 10px;
+}
+
+#myCanvas_1{
+   border: 2px solid black; 
+   margin-left: 50px; 
+   position: absolute; 
+   margin-top: 10px;
+}
+
+#tutorial{
+   display: inline-block;
+}

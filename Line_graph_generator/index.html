@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Line graph generator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="horizontal">
+        <input type="number" min="0" placeholder="min_X" id="min_x" style="margin-left:50px;">
+        <input type="number" min="0" placeholder="max_X" id="max_x">
+        <input type="number" min="1" placeholder="dis" id="kc_x">
+        <button id="cf_h" onclick="horizontal()" style="width: 150px">Confirm</button>
+    </div>
+    <br>
+    <div id="vertical">
+        <input type="number" min="0" placeholder="min_Y" id="min_y" style="margin-left:50px;">
+        <input type="number" min="0" placeholder="max_Y" id="max_y">
+        <input type="number" min="1" placeholder="dis" id="kc">
+        <button id="cf_v" onclick="vertical()" style="width: 150px">Confirm</button>
+    </div>
+    <br>
+    <div id="draw_line">
+        <input type="number" min="0" step=".01" placeholder="begin_X" id="begin_x" style="margin-left: 50px;">
+        <input type="number"min="0" step=".01" placeholder="begin_Y" id="begin_y">
+        <input type="number" min="0" step=".01" placeholder="end_X" id="end_x">
+        <input type="number" min="0" step=".01" placeholder="end_Y" id="end_y">
+        <button id="cf" onclick="draw()" style="width: 150px;">Confirm</button>
+    </div>
+    <div id="clear">
+        <button onclick="clear_lines()" style="margin-left: 50px; width: 165px;">Clear lines</button>
+        <button onclick="clear_all()" style="width: 165px;">Clear all</button>
+    </div>
+    <canvas id="myCanvas" width = "1000px" height = "600px"></canvas>
+    <canvas id="myCanvas_1" width = "350px" height = 400px"></canvas>
+    <div style="display: inline-block;">
+        <h3><p>Tutorial here: (click the image)</p></h3>
+        <a href="https://www.youtube.com/channel/UC7JQ1fi8HE8x3Poh0sxg1zQ" target="_blank"><img src="5bee.jpeg" style="width: 160px; height: 160px; margin-left: 205px;"></a>
+    </div>
+</body>
+<script src="draw.js"></script>
+<script src="howtouse.js"></script>
+</html>
